@@ -20,7 +20,7 @@ const Navbar = () => {
     <S.Wrapper>
       <S.Brand>
         <S.Image fluid={logo.childImageSharp.fluid} alt="Luccas Avila" />
-        <S.Name>Luccas Avila</S.Name>
+        <S.Name>Luccas Ávila</S.Name>
       </S.Brand>
       <S.Menu>
         <div>

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import separator from '../../static/assets/images/separator.png'
 import colors from './colors'
 
 const GlobalStyles = createGlobalStyle`
@@ -20,6 +21,22 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: ${colors.primary};
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  hr {
+    border: none;
+    width: 100%;
+    height: 10px;
+    background: url(${separator}) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: center;
+    margin: 16px 0;
   }
 `
 
