@@ -1,15 +1,12 @@
 import React from 'react'
 
 import SEO from '../components/seo'
-import GlobalStyles from '../styles/global'
+import Layout from '../components/Layout'
 
 const IndexPage = () => (
-  <div>
-    <SEO title="Home" />
-    <h1>Luccas Avila</h1>
-
-    <GlobalStyles />
-  </div>
+  <Layout>
+    <SEO />
+  </Layout>
 )
 
 export default IndexPage

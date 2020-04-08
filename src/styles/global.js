@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import colors from './colors'
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -15,6 +16,10 @@ const GlobalStyles = createGlobalStyle`
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+
+  body {
+    background: ${colors.primary};
   }
 `
 

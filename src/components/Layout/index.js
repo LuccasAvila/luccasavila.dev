@@ -1,7 +1,17 @@
-import React from 'react';
+import React from 'react'
+import * as S from './styles'
 
-const Layout = () => {
-    return(<> </>);
+import GlobalStyles from '../../styles/global'
+import Navbar from './Navbar'
+
+const Layout = ({ children }) => {
+  return (
+    <S.Wrapper>
+      <Navbar />
+      {children}
+      <GlobalStyles />
+    </S.Wrapper>
+  )
 }
 
-export const React;
+export default Layout
