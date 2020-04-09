@@ -30,14 +30,14 @@ const Portfolio = () => {
     }
   `)
 
-  console.log(projects)
-
   return (
     <S.Wrapper>
       <Title title="Portfólio" subtitle="Conheça mais do meu trabalho" center />
-      {projects.edges.map(({ node: { id, frontmatter } }) => (
-        <ProjectCard key={id} data={frontmatter} />
-      ))}
+      <S.ProjectList>
+        {projects.edges.map(({ node: { id, frontmatter } }) => (
+          <ProjectCard key={id} data={frontmatter} />
+        ))}
+      </S.ProjectList>
       <hr />
     </S.Wrapper>
   )
