@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   align-items: center;
   padding: 32px 0;
   margin-bottom: 32px;
+  ${props =>
+    props.center
+      ? `margin: 0 auto; display: flex; justify-content: center;`
+      : 'left'};
 `
 
 export const Subtitle = styled.h2`
