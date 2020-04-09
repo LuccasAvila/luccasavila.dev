@@ -43,6 +43,31 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/content`,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static/assets/img/',
+            },
+          },
+          `gatsby-remark-lazy-load`,
+          `gatsby-remark-responsive-iframe`,
+          `gatsby-remark-external-links`,
+          `gatsby-remark-prismjs`,
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
