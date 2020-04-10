@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import colors from '../../styles/colors'
 
 export const Button = styled.button`
-  font-weight: 900;
+  font-weight: bolder;
   text-transform: uppercase;
   padding: 12px 53px;
   border-radius: 32px;
