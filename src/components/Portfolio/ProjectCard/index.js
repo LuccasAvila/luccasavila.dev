@@ -1,9 +1,9 @@
 import React from 'react'
 import * as S from './styles'
 
-const ProjectCard = ({ data }) => {
+const ProjectCard = ({ slug, data }) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper to={slug}>
       <S.Image
         className="image"
         fluid={data.featuredImage.childImageSharp.fluid}

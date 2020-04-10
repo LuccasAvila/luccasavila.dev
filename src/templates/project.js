@@ -1,5 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import * as S from '../styles/products'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 import SEO from '../components/seo'
 import Layout from '../components/Layout'
@@ -8,7 +10,37 @@ const PageTemplate = ({ data }) => {
   return (
     <Layout>
       <SEO title={data.markdownRemark.frontmatter.title} />
-      <h1>{data.markdownRemark.frontmatter.title}</h1>
+      <S.Wrapper>
+        <S.Container>
+          <S.Header>
+            <S.Title>{data.markdownRemark.frontmatter.title}</S.Title>
+            <S.Description>
+              {data.markdownRemark.frontmatter.description}
+            </S.Description>
+          </S.Header>
+          {data.markdownRemark.frontmatter.link && (
+            <S.LinkButton
+              href={data.markdownRemark.frontmatter.link}
+              target="_blank"
+              rel="noopener"
+            >
+              <FaExternalLinkAlt />
+              Visitar o site
+            </S.LinkButton>
+          )}
+          <S.Image
+            fluid={
+              data.markdownRemark.frontmatter.featuredImage.childImageSharp
+                .fluid
+            }
+          />
+          <S.Main>
+            <div
+              dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+            />
+          </S.Main>
+        </S.Container>
+      </S.Wrapper>
     </Layout>
   )
 }
@@ -23,6 +55,14 @@ export const query = graphql`
       frontmatter {
         description
         title
+        link
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 640, quality: 90) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

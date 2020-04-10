@@ -13,6 +13,9 @@ const Portfolio = () => {
         edges {
           node {
             id
+            fields {
+              slug
+            }
             frontmatter {
               tags
               title
@@ -34,8 +37,8 @@ const Portfolio = () => {
     <S.Wrapper>
       <Title title="Portfólio" subtitle="Conheça mais do meu trabalho" center />
       <S.ProjectList>
-        {projects.edges.map(({ node: { id, frontmatter } }) => (
-          <ProjectCard key={id} data={frontmatter} />
+        {projects.edges.map(({ node: { fields, id, frontmatter } }) => (
+          <ProjectCard key={id} slug={fields.slug} data={frontmatter} />
         ))}
       </S.ProjectList>
       <hr />
