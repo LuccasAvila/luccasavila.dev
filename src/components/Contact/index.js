@@ -6,7 +6,7 @@ import Button from '../Button'
 
 const Contact = () => {
   return (
-    <S.Wrapper>
+    <S.Wrapper id="contato">
       <hr />
       <S.Title>Contato</S.Title>
       <S.Text>Gostou do meu Trabalho?</S.Text>

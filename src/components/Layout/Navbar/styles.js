@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Img from 'gatsby-image'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
@@ -29,7 +29,27 @@ export const Name = styled.h1`
   font-weight: normal;
 `
 
-export const Menu = styled.div``
+export const Menu = styled.div`
+  ${props =>
+    props.menuOpen &&
+    css`
+      .bars1 {
+        transform: rotateZ(45deg);
+        position: relative;
+        top: 11px;
+      }
+
+      .bars2 {
+        transform: rotateZ(-45deg);
+        position: relative;
+      }
+
+      & > div {
+        position: fixed;
+        z-index: 999;
+      }
+    `}
+`
 
 export const Bars = styled.div`
   width: 32px;

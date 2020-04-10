@@ -18,7 +18,7 @@ const About = () => {
   `)
 
   return (
-    <S.Wrapper>
+    <S.Wrapper id="sobre">
       <S.MeImage fluid={aboutImg.childImageSharp.fluid} />
       <S.Content>
         <Title title="Sobre" subtitle="Luccas Ávila" />

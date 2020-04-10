@@ -10,7 +10,7 @@ import {
 
 const SoftSkills = () => {
   return (
-    <S.Wrapper>
+    <S.Wrapper id="softskills">
       <Title title="Soft Skills" subtitle="Minhas Competências" center />
       <S.SoftSkillsList>
         <S.SoftSkill>

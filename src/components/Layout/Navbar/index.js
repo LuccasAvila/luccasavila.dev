@@ -4,7 +4,7 @@ import colors from '../../../styles/colors'
 
 import { useStaticQuery, graphql } from 'gatsby'
 
-const Navbar = () => {
+const Navbar = ({ menuOpen, toggleMenu }) => {
   const { logo } = useStaticQuery(graphql`
     {
       logo: file(relativePath: { eq: "logo.png" }) {
@@ -23,10 +23,10 @@ const Navbar = () => {
         <S.Image fluid={logo.childImageSharp.fluid} alt="Luccas Avila" />
         <S.Name>Luccas Ávila</S.Name>
       </S.Brand>
-      <S.Menu>
+      <S.Menu menuOpen={menuOpen} onClick={toggleMenu}>
         <div>
-          <S.Bars />
-          <S.Bars />
+          <S.Bars className="bars1" />
+          <S.Bars className="bars2" />
         </div>
       </S.Menu>
     </S.Wrapper>

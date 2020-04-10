@@ -34,7 +34,7 @@ const Portfolio = () => {
   `)
 
   return (
-    <S.Wrapper>
+    <S.Wrapper id="portfolio">
       <Title title="Portfólio" subtitle="Conheça mais do meu trabalho" center />
       <S.ProjectList>
         {projects.edges.map(({ node: { fields, id, frontmatter } }) => (

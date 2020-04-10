@@ -27,7 +27,7 @@ const Skills = () => {
   ]
 
   return (
-    <S.Wrapper>
+    <S.Wrapper id="skills">
       <Title title="Skills" subtitle="Minhas Habilidades" />
       <S.Text>
         Abaixo estão algumas das tecnologias que domino, com um alto nível de
