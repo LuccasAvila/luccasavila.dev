@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const Navbar = () => {
   const { logo } = useStaticQuery(graphql`

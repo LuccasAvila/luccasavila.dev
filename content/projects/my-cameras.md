@@ -1,4 +1,5 @@
 ---
+layout: project
 title: My Cameras
 description: Website
 link: https://mycameras.com.br

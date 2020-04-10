@@ -1,4 +1,5 @@
 ---
+layout: project
 title: Isoplasma
 description: Website + Sistema
 link: https://isoplasma.com.br
