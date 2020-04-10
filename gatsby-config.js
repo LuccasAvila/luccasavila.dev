@@ -69,7 +69,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-transition-link`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`,
     {
       resolve: 'gatsby-plugin-netlify-cache',
