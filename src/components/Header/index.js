@@ -1,6 +1,6 @@
 import React from 'react'
 import * as S from './styles'
-import Button from '../../components/Button'
+import AniLinkButton from '../../components/AniLinkButton'
 
 const Header = () => {
   return (
@@ -13,7 +13,9 @@ const Header = () => {
         <S.Quote>{'{ TRANSFORMANDO SOLUÇÕES EM CÓDIGO }'}</S.Quote>
         <hr />
       </S.Content>
-      <Button margin={128}>Portfólio</Button>
+      <AniLinkButton to="/#portfolio" margin={128}>
+        Portfólio
+      </AniLinkButton>
     </S.Wrapper>
   )
 }

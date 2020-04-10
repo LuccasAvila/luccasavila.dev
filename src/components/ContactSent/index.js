@@ -2,15 +2,13 @@ import React from 'react'
 import * as S from './styles'
 import AniLinkButton from '../AniLinkButton'
 
-const NotFound = () => {
+const ContactSent = () => {
   return (
     <S.Wrapper>
       <S.Text>
-        <S.Title>Página não encontrada</S.Title>
-        <S.Error>Erro 404</S.Error>
-        <S.Quote>
-          A página que você deseja não está disponível ou não existe
-        </S.Quote>
+        <S.Title>Contato enviado com</S.Title>
+        <S.Return>Sucesso!</S.Return>
+        <S.Quote>Entraremos em contato em breve em seu e-mail!</S.Quote>
         <hr />
       </S.Text>
       <AniLinkButton to="/" margin={128}>
@@ -20,4 +18,4 @@ const NotFound = () => {
   )
 }
 
-export default NotFound
+export default ContactSent

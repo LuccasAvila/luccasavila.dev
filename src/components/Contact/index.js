@@ -43,7 +43,12 @@ const Contact = () => {
             </S.Link>
           </S.Ways>
         </div>
-        <S.Form name="contact" method="POST" data-netlify="true">
+        <S.Form
+          name="contact"
+          method="POST"
+          action="/success"
+          data-netlify="true"
+        >
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
           <Input name="name" type="text" label="Seu nome" />
