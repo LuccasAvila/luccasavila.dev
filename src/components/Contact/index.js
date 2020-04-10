@@ -7,6 +7,7 @@ import Button from '../Button'
 const Contact = () => {
   return (
     <S.Wrapper>
+      <hr />
       <S.Title>Contato</S.Title>
       <S.Text>Gostou do meu Trabalho?</S.Text>
       <S.Text>Entre em contato para conversarmos!</S.Text>
@@ -22,11 +23,23 @@ const Contact = () => {
             </S.Link>
             <S.Link>
               <FaGithub />
-              <a href="https://github.com/LuccasAvila">LuccasAvila</a>
+              <a
+                href="https://github.com/LuccasAvila"
+                target="_blank"
+                rel="noopener"
+              >
+                LuccasAvila
+              </a>
             </S.Link>
             <S.Link>
               <FaTwitter />
-              <a href="https://twitter.com/luccasdev">@LuccasDev</a>
+              <a
+                href="https://twitter.com/luccasdev"
+                target="_blank"
+                rel="noopener"
+              >
+                @LuccasDev
+              </a>
             </S.Link>
           </S.Ways>
         </div>
@@ -39,7 +52,6 @@ const Contact = () => {
           </Button>
         </S.Form>
       </S.Content>
-      <hr />
     </S.Wrapper>
   )
 }

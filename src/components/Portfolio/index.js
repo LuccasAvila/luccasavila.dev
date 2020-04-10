@@ -41,7 +41,6 @@ const Portfolio = () => {
           <ProjectCard key={id} slug={fields.slug} data={frontmatter} />
         ))}
       </S.ProjectList>
-      <hr />
     </S.Wrapper>
   )
 }

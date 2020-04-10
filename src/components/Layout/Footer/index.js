@@ -5,6 +5,7 @@ import { FaCoffee, FaHeart } from 'react-icons/fa'
 const Footer = () => {
   return (
     <S.Wrapper>
+      <hr />
       <p>
         Feito com <a href="https://gatsbyjs.org">GatsbyJS</a>, <FaCoffee /> e{' '}
         <FaHeart />
