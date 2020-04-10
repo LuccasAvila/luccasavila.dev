@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const Wrapper = styled.div`
   height: 64px;
@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 `
-export const Brand = styled(Link)`
+export const Brand = styled(AniLink)`
   display: flex;
   align-items: center;
 `

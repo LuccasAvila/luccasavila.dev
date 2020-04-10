@@ -1,5 +1,6 @@
 import React from 'react'
 import * as S from './styles'
+import colors from '../../../styles/colors'
 
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -18,7 +19,7 @@ const Navbar = () => {
 
   return (
     <S.Wrapper>
-      <S.Brand to="/">
+      <S.Brand to="/" cover direction="left" bg={colors.primary}>
         <S.Image fluid={logo.childImageSharp.fluid} alt="Luccas Avila" />
         <S.Name>Luccas Ávila</S.Name>
       </S.Brand>

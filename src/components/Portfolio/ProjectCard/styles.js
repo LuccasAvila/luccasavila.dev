@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Img from 'gatsby-image'
 
-export const Wrapper = styled(Link)`
+export const Wrapper = styled(AniLink)`
   display: inline-block;
   position: relative;
   box-shadow: 0 0 8px #1b171c;
