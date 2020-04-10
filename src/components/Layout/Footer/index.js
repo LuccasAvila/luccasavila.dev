@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <S.Wrapper>
       <p>
-        Feito com <a href="https://gatsbyjs.org">Gatsby</a>, <FaCoffee /> e{' '}
+        Feito com <a href="https://gatsbyjs.org">GatsbyJS</a>, <FaCoffee /> e{' '}
         <FaHeart />
       </p>
       <p>© Copyright {new Date().getFullYear()} - Luccas Avila</p>

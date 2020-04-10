@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 
 const Navbar = () => {
   const { logo } = useStaticQuery(graphql`
@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <S.Wrapper>
-      <S.Brand>
+      <S.Brand to="/">
         <S.Image fluid={logo.childImageSharp.fluid} alt="Luccas Avila" />
         <S.Name>Luccas Ávila</S.Name>
       </S.Brand>

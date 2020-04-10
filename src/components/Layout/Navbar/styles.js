@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { Link } from 'gatsby'
 
 export const Wrapper = styled.div`
   height: 64px;
@@ -7,7 +8,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 `
-export const Brand = styled.div`
+export const Brand = styled(Link)`
   display: flex;
   align-items: center;
 `
