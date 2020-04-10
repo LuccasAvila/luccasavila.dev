@@ -43,7 +43,9 @@ const Contact = () => {
             </S.Link>
           </S.Ways>
         </div>
-        <S.Form>
+        <S.Form method="post" netlify-honeypot="bot-field" data-netlify="true">
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
           <Input label="Seu nome" />
           <Input label="Seu e-mail" />
           <Input label="Sua mensagem" textarea />

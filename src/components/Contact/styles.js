@@ -24,7 +24,7 @@ export const Content = styled.div`
   flex-wrap: wrap;
 `
 
-export const Form = styled.div`
+export const Form = styled.form`
   flex-basis: 360px;
 `
 
