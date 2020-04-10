@@ -22,7 +22,7 @@ const PageTemplate = ({ data }) => {
             <S.LinkButton
               href={data.markdownRemark.frontmatter.link}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <FaExternalLinkAlt />
               Visitar o site

@@ -47,7 +47,7 @@ const About = () => {
             <li>
               <S.SocialLink
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://github.com/LuccasAvila"
                 aria-label="Github"
               >
@@ -57,7 +57,7 @@ const About = () => {
             <li>
               <S.SocialLink
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 href="https://twitter.com/LuccasDev"
                 aria-label="Twitter"
               >

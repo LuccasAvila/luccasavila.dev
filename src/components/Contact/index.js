@@ -26,7 +26,7 @@ const Contact = () => {
               <a
                 href="https://github.com/LuccasAvila"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 LuccasAvila
               </a>
@@ -36,7 +36,7 @@ const Contact = () => {
               <a
                 href="https://twitter.com/luccasdev"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 @LuccasDev
               </a>

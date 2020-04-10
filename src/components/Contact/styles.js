@@ -40,7 +40,7 @@ export const Me = styled.h3`
   }
 `
 
-export const Ways = styled.ul`
+export const Ways = styled.div`
   margin-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #4e4a4f;
