@@ -15,7 +15,7 @@ const IndexPage = () => (
     <Skills />
     <SoftSkills />
     <Portfolio />
-    <SEO />
+    <SEO title="Home" />
   </Layout>
 )
 
