@@ -26,7 +26,7 @@ const Menu = ({ menuOpen, toggleMenu }) => {
           </S.MenuLink>
         </S.Item>
         <S.Item>
-          <S.MenuLink onClick={toggleMenu} to="#contato">
+          <S.MenuLink onClick={toggleMenu} to="/#contato">
             Contato
           </S.MenuLink>
         </S.Item>
