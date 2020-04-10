@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import colors from '../../styles/colors'
 
 export const Wrapper = styled.nav`
@@ -29,7 +29,7 @@ export const Item = styled.li`
   position: relative;
 `
 
-export const MenuLink = styled(Link).attrs({
+export const MenuLink = styled(AniLink).attrs({
   cover: true,
   direction: 'left',
   bg: colors.primary,
