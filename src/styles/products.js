@@ -52,8 +52,9 @@ export const LinkButton = styled.a`
 
 export const Image = styled(Img)`
   margin-top: 32px;
-  width: 640px;
-  height: 480px;
+  max-width: 640px;
+  width: 100%;
+  max-height: 480px;
   object-fit: cover;
 `
 
