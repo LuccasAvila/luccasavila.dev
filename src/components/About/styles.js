@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 import Img from 'gatsby-image'
 import colors from '../../styles/colors'
 
@@ -15,6 +16,9 @@ export const MeImage = styled(Img)`
   width: 100%;
   flex: 1 1 360px;
   margin-right: 32px;
+  ${media.lessThan('medium')`
+    margin-right: 0px;
+  `}
 `
 
 export const Content = styled.div`

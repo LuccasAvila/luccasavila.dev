@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import media from 'styled-media-query'
 import separator from '../../static/assets/images/separator.png'
 import colors from './colors'
 
@@ -21,6 +22,9 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: ${colors.primary};
+    ${media.lessThan('medium')`
+      font-size: 12px;
+    `}
   }
 
   a {

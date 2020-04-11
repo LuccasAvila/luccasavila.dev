@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 import colors from '../../styles/colors'
 
 export const Wrapper = styled.section`
@@ -18,6 +19,9 @@ export const SkillList = styled.ul`
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 16px;
+  ${media.lessThan('medium')`
+    margin-top: 32px;
+  `}
 `
 
 export const Skill = styled.li`
@@ -31,4 +35,8 @@ export const Skill = styled.li`
     transform: scale(1.2);
     color: #5f5a61;
   }
+
+  ${media.lessThan('medium')`
+    flex: 1 1 160px;
+  `}
 `

@@ -7,6 +7,7 @@ export const Wrapper = styled.footer`
   font-weight: 300;
   font-size: 1.125rem;
   text-align: center;
+  padding-bottom: 16px;
   a {
     border-bottom: 1px dashed ${colors.light};
   }
