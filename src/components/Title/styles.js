@@ -7,9 +7,15 @@ export const Wrapper = styled.div`
   padding: 32px 0;
   margin-bottom: 32px;
   ${props =>
-    props.center || media.lessThan('medium')
+    props.center
       ? `margin: 0 auto; display: flex; justify-content: center;`
       : 'left'};
+
+  ${media.lessThan('medium')`
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  `}
 `
 
 export const Subtitle = styled.h2`
