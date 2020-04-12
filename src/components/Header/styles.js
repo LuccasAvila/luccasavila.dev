@@ -1,5 +1,7 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 import colors from '../../styles/colors'
+import { Link } from 'gatsby'
 
 export const Wrapper = styled.div`
   height: calc(100vh - 64px);
@@ -7,6 +9,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 `
 
 export const Square = styled.div`
@@ -53,4 +56,29 @@ export const Developer = styled.h2`
 
 export const Quote = styled.p`
   font-size: 1.125em;
+`
+
+export const DownArrow = styled(Link)`
+  font-size: 2em;
+  font-weight: 100;
+  color: #f6f6f6;
+  position: absolute;
+  bottom: 32px;
+  animation: upToDown 2s ease-in reverse infinite;
+
+  ${media.lessThan('medium')`
+    bottom: 24px;
+  `}
+
+  @keyframes upToDown {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(16px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 `

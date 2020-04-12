@@ -1,6 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 import AniLinkButton from '../../components/AniLinkButton'
+import { FaAngleDown } from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -16,6 +17,9 @@ const Header = () => {
       <AniLinkButton to="/#portfolio" margin={128}>
         Portfólio
       </AniLinkButton>
+      <S.DownArrow to="/#sobre">
+        <FaAngleDown />
+      </S.DownArrow>
     </S.Wrapper>
   )
 }
