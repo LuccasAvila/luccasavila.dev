@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import colors from '../styles/colors'
 
 export const Wrapper = styled.main`
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 64px 16px;
-  color: #f6f6f6;
+  color: ${colors.light};
   margin-top: 16px;
 `
 
@@ -31,8 +32,8 @@ export const Description = styled.h1`
 
 export const LinkButton = styled.a`
   display: inline-block;
-  background: #d89e63;
-  color: #221d23;
+  background: ${colors.secondary};
+  color: ${colors.primary};
   text-transform: uppercase;
   padding: 8px 16px;
   border-radius: 4px;
@@ -45,8 +46,8 @@ export const LinkButton = styled.a`
 
   &:hover {
     background: transparent;
-    color: #d89e63;
-    border: 1px solid #d89e63;
+    color: ${colors.secondary};
+    border: 1px solid ${colors.secondary};
   }
 `
 
@@ -90,5 +91,15 @@ export const Main = styled.section`
     font-weight: 700;
     letter-spacing: 0.069rem;
     line-height: 1.4;
+  }
+
+  a {
+    border-bottom: 1px dashed #2a98c7;
+    color: #2a98c7;
+    transition: 0.4s ease-out;
+    &:hover {
+      border-bottom: 1px dashed ${colors.secondary};
+      color: ${colors.secondary};
+    }
   }
 `

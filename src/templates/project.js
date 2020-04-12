@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import * as S from '../styles/products'
+import * as S from '../styles/projects'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
 import SEO from '../components/seo'
