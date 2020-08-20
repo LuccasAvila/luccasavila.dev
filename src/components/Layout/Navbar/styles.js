@@ -43,19 +43,22 @@ export const Menu = styled.div`
         transform: rotateZ(-45deg);
         position: relative;
       }
-
-      & > div {
-        position: fixed;
-        z-index: 999;
-      }
     `}
 `
 
 export const Bars = styled.div`
+  color: #fff;
+  font-size: 1.5em;
+  position: relative;
+  z-index: 999;
+`
+
+export const Bar = styled.div`
   width: 32px;
   height: 3px;
   margin: 8px 0;
   background: #fff;
   border-radius: 5px;
-  transition: 0.4s;
+  transition: .4s;
+  top: 0;
 `

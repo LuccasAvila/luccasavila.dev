@@ -24,10 +24,10 @@ const Navbar = ({ menuOpen, toggleMenu }) => {
         <S.Name>Luccas Ávila</S.Name>
       </S.Brand>
       <S.Menu menuOpen={menuOpen} onClick={toggleMenu}>
-        <div>
-          <S.Bars className="bars1" />
-          <S.Bars className="bars2" />
-        </div>
+        <S.Bars>
+          <S.Bar className="bars1" />
+          <S.Bar className="bars2" />
+        </S.Bars>
       </S.Menu>
     </S.Wrapper>
   )
